@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Total scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px; /* For horizontal scrollbars */
+  margin: 2px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* display: none; */
+}
+
+/* Background of the scrollbar itself */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Background of the draggable part of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: rgb(101, 175, 235);
+  border-radius: 10px;
+}
+
+/* Background of the draggable part when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(22, 94, 172);
+}
